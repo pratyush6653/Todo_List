@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Form</title>
+</head>
+{% extends 'base/main.html' %}
+<body>
+{% block content %}
+<div class="header-bar">
+    <a href=" {% url 'tasks'  %}" >&#8592;  Back</a>
+</div>
+
+
+<div class="card-body">
+    <h1> Add Task </h1>
+ <form method="POST" action="">
+        {% csrf_token %}
+         {{form.as_p}}
+        <input class="button" type="submit" value="Submit">
+    </form>
+</div>
+
+{% endblock content %}
+</body>
+</html>

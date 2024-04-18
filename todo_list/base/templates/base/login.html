@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+</head>
+{% extends 'base/main.html' %}
+<body>
+{% block content %}
+<div class="header-bar">
+    <h1>LogIn Please !</h1>
+</div>
+<div class="card-body" >
+<form method="POST">
+    {% csrf_token %}
+   <label>{{form.username.label}}</label>
+        {{form.username}}
+    <label>{{form.password.label}}</label>
+        {{form.password}}
+    <input style="margin-top:10px "  class="button" type="submit" value="Login">
+</form>
+    <p style="color:black">Don't have an account please <a href=" {% url 'register' %}" style="color:#002D62">Register</a></p>
+</div>
+
+
+
+</body>
+{% endblock content %}
+</html>

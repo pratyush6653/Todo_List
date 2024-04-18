@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register Here !</title>
+</head>
+{% extends 'base/main.html' %}
+<body>
+{% block content %}
+<div class="header-bar">
+<h1>Register Here </h1>
+</div>
+
+<div class="card-body" >
+    <form method="POST" >
+    {% csrf_token %}
+        <label>{{form.username.label}}</label>
+        {{form.username}}
+        <label>{{form.password1.label}}</label>
+        {{form.password1}}
+        <label>{{form.password2.label}}</label>
+        {{form.password2}}
+    <input style="margin-top:10px " class="button" type="submit" value="Register">
+</form>
+<p style="color:black">
+    Already registered please
+    <a href="{% url 'login' %}" style="color: #002D62;">Login</a>
+</p>
+</div>
+
+</body>
+{% endblock content %}
+</html>
