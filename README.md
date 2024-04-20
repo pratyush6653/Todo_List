@@ -2,7 +2,6 @@
   <h1>Django Todo App</h1>
   <p>
     <img src="https://img.shields.io/badge/Made%20with-Django-092E20?logo=django" alt="Made with Django">
-    <img src="https://img.shields.io/github/license/your_username/django-todo-app" alt="License">
   </p>
 </div>
 
