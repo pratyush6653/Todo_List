@@ -35,11 +35,14 @@ The Django Todo App is a robust task management web application built using Djan
 Copy code
 cd django-todo-app
 3. **Install dependencies:**
+    ```bash
    pip install -r requirements.txt
-4. **Apply database migrations:**
+5. **Apply database migrations:**
+    ```bash
    python manage.py migrate
 
 ### Start the Django development server:
+ ```bash
 python manage.py runserver
 
 ### Contributing
