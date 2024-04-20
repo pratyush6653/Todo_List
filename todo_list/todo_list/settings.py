@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'todo_list.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pratyush_kidsshore',
-        'USER': 'pratyush_kidsshore',
-        'PASSWORD': '5dcc83c7c26078c8eeca650fab7375269146fe09',
-        'HOST': 'pn6.h.filess.io',
-        'PORT': '3307',
+        'NAME': 'django_todolist',
+        'USER': 'root',
+        'PASSWORD': 'pratyush6653@',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
